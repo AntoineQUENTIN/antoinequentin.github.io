@@ -88,13 +88,13 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/</loc>
+    <lastmod>2016-11-05T19:41:01+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2016-11-05T19:41:01+05:30</lastmod>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
