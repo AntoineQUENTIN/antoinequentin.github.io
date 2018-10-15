@@ -2,15 +2,14 @@
 +++
 showonlyimage = true
 draft = false
-image = "img/portfolio/a4-paper.jpg"
+image = "img/portfolio/cv.carte.png"
 date = "2016-11-05T18:25:22+05:30"
-title = "Carte mondiale des rivières polluées"
+title = "CV carte"
 weight = 0
 +++
 
-Description du contenu
+Mes différentes expériences et formations cartographiées grâce à Leaflet
 <!--more-->
 
-
-
-{{< myshortcode >}} 
+<iframe width="100%" height="400"></iframe>
+{{< leaflet >}}

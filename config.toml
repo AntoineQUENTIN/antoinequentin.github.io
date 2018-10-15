@@ -11,11 +11,11 @@ googleAnalytics = ""
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
   style = "blue"
-  description = "Etudes environnementales"
+  description = "Cv en ligne"
   copyright = "&copy;2016 Your name or company"
   sidebarAbout = [
-    "Blog d'études environnementales vu à travers le prisme de la donnée.",
-    "Tour d'horizon de différents outils."
+    "Mes expériences",
+    "Mes projets"
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
