@@ -22,11 +22,31 @@
     </item>
     
     <item>
-      <title>Data viz</title>
+      <title>NetworkD3</title>
+      <link>/portfolio/work3/</link>
+      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
+      
+      <guid>/portfolio/work3/</guid>
+      <description>&lt;p&gt;Exemple de data viz avec R
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Threejs</title>
       <link>/portfolio/work2/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
       
       <guid>/portfolio/work2/</guid>
+      <description>&lt;p&gt;Exemple de data viz avec R
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>d3heatmap</title>
+      <link>/portfolio/work4/</link>
+      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
+      
+      <guid>/portfolio/work4/</guid>
       <description>&lt;p&gt;Exemple de data viz avec R
 &lt;/p&gt;</description>
     </item>
