@@ -12,4 +12,4 @@ Exemple de data viz avec R
 <!--more-->
 
 <iframe width="100%" height="400"></iframe>
-{{< threejs >}}
+{{< leaflet >}}
