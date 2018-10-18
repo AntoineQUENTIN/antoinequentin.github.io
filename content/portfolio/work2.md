@@ -68,7 +68,7 @@ Voici quelques exemples de ce qu'on peut produire avec R
 
 
 ```
-<iframe src='/img/fig/d3heatmap.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/d3heatmap.html' width="1000" height="600" frameborder="0"></iframe>
 
 ```{r 01}
   library(DiagrammeR)
