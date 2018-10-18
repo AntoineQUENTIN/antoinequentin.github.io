@@ -22,61 +22,11 @@
     </item>
     
     <item>
-      <title>NetworkD3</title>
-      <link>/portfolio/work3/</link>
-      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
-      <guid>/portfolio/work3/</guid>
-      <description>&lt;p&gt;Exemple de data viz avec R
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Threejs</title>
+      <title>Data viz</title>
       <link>/portfolio/work2/</link>
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
       
       <guid>/portfolio/work2/</guid>
-      <description>&lt;p&gt;Exemple de data viz avec R
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>d3heatmap</title>
-      <link>/portfolio/work4/</link>
-      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
-      <guid>/portfolio/work4/</guid>
-      <description>&lt;p&gt;Exemple de data viz avec R
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>diagonalNetwork</title>
-      <link>/portfolio/work7/</link>
-      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
-      <guid>/portfolio/work7/</guid>
-      <description>&lt;p&gt;Exemple de data viz avec R
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>radialNetwork</title>
-      <link>/portfolio/work6/</link>
-      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
-      <guid>/portfolio/work6/</guid>
-      <description>&lt;p&gt;Exemple de data viz avec R
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>sankeyNetwork</title>
-      <link>/portfolio/work5/</link>
-      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
-      <guid>/portfolio/work5/</guid>
       <description>&lt;p&gt;Exemple de data viz avec R
 &lt;/p&gt;</description>
     </item>
