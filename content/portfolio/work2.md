@@ -24,13 +24,13 @@ Voici quelques exemples de ce qu'on peut produire avec R
  
  radialNetwork(List = Flare, fontSize = 10, opacity = 0.9)
  ```
-<iframe src='/img/radialNetwork.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/radialNetwork.html' width="100%" height="400" frameborder="0"></iframe>
 
 
 ```{r 01}
  diagonalNetwork(List = Flare, fontSize = 10, opacity = 0.9)
  ```
-<iframe src='/img/diagonalNetwork.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/diagonalNetwork.html' width="100%" height="400" frameborder="0"></iframe>
 
 
 
@@ -45,7 +45,7 @@ Voici quelques exemples de ce qu'on peut produire avec R
                Target = "target", Value = "value", NodeID = "name",
                units = "TWh", fontSize = 12, nodeWidth = 30)
 ```
-<iframe src='/img/sankeyNetwork.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/sankeyNetwork.html' width="100%" height="400" frameborder="0"></iframe>
 
 
 
@@ -59,7 +59,7 @@ Voici quelques exemples de ce qu'on peut produire avec R
   i <- visNetwork(nodes, edges) %>%
     visOptions(highlightNearest = TRUE, nodesIdSelection = TRUE)
 ```
-<iframe src='/img/visNetwork.html' width="1000" height="600" frameborder="0"></iframe>
+<iframe src='/img/fig/visNetwork.html' width="1000" height="600" frameborder="0"></iframe>
 
 
 ```{r 01}
@@ -68,7 +68,7 @@ Voici quelques exemples de ce qu'on peut produire avec R
 
 
 ```
-<iframe src='/img/d3heatmap.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/d3heatmap.html' width="100%" height="400" frameborder="0"></iframe>
 
 ```{r 01}
   library(DiagrammeR)
@@ -79,7 +79,7 @@ Voici quelques exemples de ce qu'on peut produire avec R
     A -> {B C D} 
   }")
 ```
-<iframe src='/img/DiagrammeR.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/DiagrammeR.html' width="100%" height="400" frameborder="0"></iframe>
 
 
 
@@ -91,24 +91,13 @@ x <- cos(z)
 y <- sin(z)
 scatterplot3js(x,y,z, color=rainbow(length(z)))
 ```
-<iframe src='/img/threejs.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/threejs.html' width="100%" height="400" frameborder="0"></iframe>
 
 ```
 library(DT)
 df <- datatable(iris, options = list(pageLength = 5))
 ```
-<iframe src='/img/DT.html' width="800" height="400" frameborder="0"></iframe>
-
-
-```
-src <- c("A", "A", "A", "A",
-          "B", "B", "C", "C", "D")
- target <- c("B", "C", "D", "J",
-             "E", "F", "G", "H", "I")
- networkData <- data.frame(src, target)
-
-```
-<iframe src='/img/simpleNetwork.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/DT.html' width="800" height="400" frameborder="0"></iframe>
 
 
 
@@ -119,7 +108,7 @@ d <- plot_ly(d, x = d$carat, y = d$price,
         mode = "markers", color = d$carat, size = d$carat)
 ```
 
-<iframe src='/img/plotly.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/plotly.html' width="100%" height="400" frameborder="0"></iframe>
 
 
 

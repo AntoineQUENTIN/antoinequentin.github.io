@@ -119,12 +119,12 @@
  radialNetwork(List = Flare, fontSize = 10, opacity = 0.9)
 </code></pre>
 
-<iframe src='/img/radialNetwork.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/radialNetwork.html' width="100%" height="400" frameborder="0"></iframe>
 
 <pre><code class="language-r"> diagonalNetwork(List = Flare, fontSize = 10, opacity = 0.9)
 </code></pre>
 
-<iframe src='/img/diagonalNetwork.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/diagonalNetwork.html' width="100%" height="400" frameborder="0"></iframe>
 
 <pre><code class="language-r"> URL &lt;- paste0(
    &quot;https://cdn.rawgit.com/christophergandrud/networkD3/&quot;,
@@ -136,7 +136,7 @@
                units = &quot;TWh&quot;, fontSize = 12, nodeWidth = 30)
 </code></pre>
 
-<iframe src='/img/sankeyNetwork.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/sankeyNetwork.html' width="100%" height="400" frameborder="0"></iframe>
 
 <pre><code class="language-r">  library(visNetwork)
   nodes &lt;- data.frame(id = 1:6, title = paste(&quot;node&quot;, 1:6), 
@@ -147,7 +147,7 @@
     visOptions(highlightNearest = TRUE, nodesIdSelection = TRUE)
 </code></pre>
 
-<iframe src='/img/visNetwork.html' width="1000" height="600" frameborder="0"></iframe>
+<iframe src='/img/fig/visNetwork.html' width="1000" height="600" frameborder="0"></iframe>
 
 <pre><code class="language-r"> library(d3heatmap)
   i &lt;-d3heatmap(mtcars, scale=&quot;column&quot;, colors=&quot;Blues&quot;)  
@@ -155,7 +155,7 @@
 
 </code></pre>
 
-<iframe src='/img/d3heatmap.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/d3heatmap.html' width="100%" height="400" frameborder="0"></iframe>
 
 <pre><code class="language-r">  library(DiagrammeR)
  i &lt;-  grViz(&quot;
@@ -166,7 +166,7 @@
   }&quot;)
 </code></pre>
 
-<iframe src='/img/DiagrammeR.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/DiagrammeR.html' width="100%" height="400" frameborder="0"></iframe>
 
 <pre><code class="language-r">library(threejs)
 z &lt;- seq(-10, 10, 0.1)
@@ -175,23 +175,13 @@ y &lt;- sin(z)
 scatterplot3js(x,y,z, color=rainbow(length(z)))
 </code></pre>
 
-<iframe src='/img/threejs.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/threejs.html' width="100%" height="400" frameborder="0"></iframe>
 
 <pre><code>library(DT)
 df &lt;- datatable(iris, options = list(pageLength = 5))
 </code></pre>
 
-<iframe src='/img/DT.html' width="800" height="400" frameborder="0"></iframe>
-
-<pre><code>src &lt;- c(&quot;A&quot;, &quot;A&quot;, &quot;A&quot;, &quot;A&quot;,
-          &quot;B&quot;, &quot;B&quot;, &quot;C&quot;, &quot;C&quot;, &quot;D&quot;)
- target &lt;- c(&quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;J&quot;,
-             &quot;E&quot;, &quot;F&quot;, &quot;G&quot;, &quot;H&quot;, &quot;I&quot;)
- networkData &lt;- data.frame(src, target)
-
-</code></pre>
-
-<iframe src='/img/simpleNetwork.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/DT.html' width="800" height="400" frameborder="0"></iframe>
 
 <pre><code class="language-r">d &lt;- diamonds[sample(nrow(diamonds), 500), ]
 d &lt;- plot_ly(d, x = d$carat, y = d$price, 
@@ -199,7 +189,7 @@ d &lt;- plot_ly(d, x = d$carat, y = d$price,
         mode = &quot;markers&quot;, color = d$carat, size = d$carat)
 </code></pre>
 
-<iframe src='/img/plotly.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/plotly.html' width="100%" height="400" frameborder="0"></iframe>
          
       </div>
     </div>
