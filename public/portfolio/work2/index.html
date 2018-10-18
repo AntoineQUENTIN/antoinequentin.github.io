@@ -103,8 +103,70 @@
     <div class="col-lg-8">
       <div class="content-column-content">
          <h1>Data viz</h1>
-         <p>Exemple de data viz avec R
+         <p>Voici quelques exemples de ce qu&rsquo;on peut produire avec R
 </p>
+
+<pre><code class="language-r"> URL &lt;- paste0(
+   &quot;https://cdn.rawgit.com/christophergandrud/networkD3/&quot;,
+   &quot;master/JSONdata//flare.json&quot;)
+ 
+ ## Convert to list format
+ Flare &lt;- jsonlite::fromJSON(URL, simplifyDataFrame = FALSE)
+ 
+ # Use subset of data for more readable diagram
+ Flare$children = Flare$children[1:3]
+ 
+ radialNetwork(List = Flare, fontSize = 10, opacity = 0.9)
+</code></pre>
+
+<iframe src='/img/radialNetwork.html' width="100%" height="400" frameborder="0"></iframe>
+
+<pre><code class="language-r"> diagonalNetwork(List = Flare, fontSize = 10, opacity = 0.9)
+</code></pre>
+
+<iframe src='/img/diagonalNetwork.html' width="100%" height="400" frameborder="0"></iframe>
+
+<pre><code class="language-r"> URL &lt;- paste0(
+   &quot;https://cdn.rawgit.com/christophergandrud/networkD3/&quot;,
+   &quot;master/JSONdata/energy.json&quot;)
+ Energy &lt;- jsonlite::fromJSON(URL)
+ # Plot
+ sankeyNetwork(Links = Energy$links, Nodes = Energy$nodes, Source = &quot;source&quot;,
+               Target = &quot;target&quot;, Value = &quot;value&quot;, NodeID = &quot;name&quot;,
+               units = &quot;TWh&quot;, fontSize = 12, nodeWidth = 30)
+</code></pre>
+
+<iframe src='/img/sankeyNetwork.html' width="100%" height="400" frameborder="0"></iframe>
+
+<pre><code class="language-r">  library(visNetwork)
+  nodes &lt;- data.frame(id = 1:6, title = paste(&quot;node&quot;, 1:6), 
+                      shape = c(&quot;dot&quot;, &quot;square&quot;),
+                      size = 10:15, color = c(&quot;blue&quot;, &quot;red&quot;))
+  edges &lt;- data.frame(from = 1:5, to = c(5, 4, 6, 3, 3))
+  i &lt;- visNetwork(nodes, edges) %&gt;%
+    visOptions(highlightNearest = TRUE, nodesIdSelection = TRUE)
+</code></pre>
+
+<iframe src='/img/visNetwork.html' width="1000" height="600" frameborder="0"></iframe>
+
+<pre><code class="language-r"> library(d3heatmap)
+  i &lt;-d3heatmap(mtcars, scale=&quot;column&quot;, colors=&quot;Blues&quot;)  
+
+
+</code></pre>
+
+<iframe src='/img/d3heatmap.html' width="100%" height="400" frameborder="0"></iframe>
+
+<pre><code class="language-r">  library(DiagrammeR)
+ i &lt;-  grViz(&quot;
+  digraph {
+    layout = twopi
+    node [shape = circle]
+    A -&gt; {B C D} 
+  }&quot;)
+</code></pre>
+
+<iframe src='/img/DiagrammeR.html' width="100%" height="400" frameborder="0"></iframe>
 
 <pre><code class="language-r">library(threejs)
 z &lt;- seq(-10, 10, 0.1)
@@ -113,7 +175,31 @@ y &lt;- sin(z)
 scatterplot3js(x,y,z, color=rainbow(length(z)))
 </code></pre>
 
-<iframe src='/img/threejs.html' width="100%" height="400"></iframe>
+<iframe src='/img/threejs.html' width="100%" height="400" frameborder="0"></iframe>
+
+<pre><code>library(DT)
+df &lt;- datatable(iris, options = list(pageLength = 5))
+</code></pre>
+
+<iframe src='/img/DT.html' width="800" height="400" frameborder="0"></iframe>
+
+<pre><code>src &lt;- c(&quot;A&quot;, &quot;A&quot;, &quot;A&quot;, &quot;A&quot;,
+          &quot;B&quot;, &quot;B&quot;, &quot;C&quot;, &quot;C&quot;, &quot;D&quot;)
+ target &lt;- c(&quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;J&quot;,
+             &quot;E&quot;, &quot;F&quot;, &quot;G&quot;, &quot;H&quot;, &quot;I&quot;)
+ networkData &lt;- data.frame(src, target)
+
+</code></pre>
+
+<iframe src='/img/simpleNetwork.html' width="100%" height="400" frameborder="0"></iframe>
+
+<pre><code class="language-r">d &lt;- diamonds[sample(nrow(diamonds), 500), ]
+d &lt;- plot_ly(d, x = d$carat, y = d$price, 
+        text = paste(&quot;Clarity: &quot;, d$clarity),
+        mode = &quot;markers&quot;, color = d$carat, size = d$carat)
+</code></pre>
+
+<iframe src='/img/plotly.html' width="100%" height="400" frameborder="0"></iframe>
          
       </div>
     </div>
