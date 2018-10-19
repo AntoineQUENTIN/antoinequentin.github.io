@@ -14,8 +14,8 @@ googleAnalytics = ""
   description = "BLOG"
   copyright = "&copy;2018 Antoine QUENTIN"
   sidebarAbout = [
-    "Mes expériences",
-    "Mes projets"
+    "Ce site contient des projets réalisés en dehors et pour le travail",
+    "Paris, France"
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
@@ -33,16 +33,16 @@ googleAnalytics = ""
 
   # Nav links in the side bar
   [[params.navlinks]]
-  name = "Home"
+  name = "Acceuil"
   url = "portfolio/"
   home = true
 
   [[params.navlinks]]
-  name = "About"
+  name = "A propos"
   url = "about/"
 
   [[params.navlinks]]
-  name = "Get in touch"
+  name = "Contact"
   url = "contact/"
 
   [params.social]
