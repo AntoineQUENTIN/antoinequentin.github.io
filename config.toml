@@ -47,8 +47,8 @@ googleAnalytics = "UA-127812757-1"
   url = "contact/"
 
   [params.social]
-  linkedin      = "antoine-quentin"
+  linkedin      = "https://www.linkedin.com/in/antoine-quentin/"
   stackoverflow = "https://stackoverflow.com/users/10457318/a-quentin"
-  github        = "antoinequentin"
+  github        = "https://github.com/antoinequentin"
 
  
