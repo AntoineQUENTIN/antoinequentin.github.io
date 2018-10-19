@@ -5,12 +5,13 @@ languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+googleAnalytics = "UA-127812757-1"
 
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
   style = "blue"
+  
   description = "BLOG"
   copyright = "&copy;2018 Antoine QUENTIN"
   sidebarAbout = [
@@ -50,4 +51,4 @@ googleAnalytics = ""
   stackoverflow = "https://stackoverflow.com/users/10457318/a-quentin"
   github        = "https://github.com/antoinequentin"
 
-  googleAnalytics = "UA-127812757-1"
+ 
