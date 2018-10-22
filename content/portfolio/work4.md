@@ -89,7 +89,7 @@ mergeParallelX <- maptools::spRbind(mergeParallelX, parallelX[[4]])
 Interpolation.kriging <- SpatialPixelsDataFrame(points = mergeParallelX, data = mergeParallelX@data)
 
 ```
-
+___
 <i> Les résultats sous forme de carte grâce à Mapview</i>
 
 <iframe src='/img/mapview_station_arsenic_mean.html' width="100%" height="800" ></iframe>
