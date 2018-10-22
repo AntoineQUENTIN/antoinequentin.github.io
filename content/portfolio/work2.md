@@ -25,7 +25,7 @@ https://christophergandrud.github.io/networkD3/
  networkData <- data.frame(src, target)
  simpleNetwork(networkData)
 ```
-<iframe src='/img/fig/DiagrammeR.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/DiagrammeR.html' width="100%" height="400" frameborder="0" scrolling="no" ></iframe>
 
 
 ```{r}
@@ -34,13 +34,13 @@ https://christophergandrud.github.io/networkD3/
  Flare$children = Flare$children[1:3]
  radialNetwork(List = Flare, fontSize = 10, opacity = 0.9)
 ```
-<iframe src='/img/fig/radialNetwork.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/radialNetwork.html' width="100%" height="400" frameborder="0" scrolling="no" ></iframe>
 
 
 ```{r}
  diagonalNetwork(List = Flare, fontSize = 10, opacity = 0.9)
  ```
-<iframe src='/img/fig/diagonalNetwork.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/diagonalNetwork.html' width="100%" height="400" frameborder="0" scrolling="no" ></iframe>
 
 
 ```{r}
@@ -52,7 +52,7 @@ https://christophergandrud.github.io/networkD3/
                Target = "target", Value = "value", NodeID = "name",
                units = "TWh", fontSize = 12, nodeWidth = 30)
 ```
-<iframe src='/img/fig/sankeyNetwork.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/sankeyNetwork.html' width="100%" height="400" frameborder="0" scrolling="no" ></iframe>
 
 
 ___
@@ -78,7 +78,7 @@ https://github.com/rstudio/d3heatmap"
  library(d3heatmap)
   d3heatmap(mtcars, scale="column", colors="Blues")  
 ```
-<iframe src='/img/fig/d3heatmap.html' width="100%" height="600" frameborder="0"></iframe>
+<iframe src='/img/fig/d3heatmap.html' width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 
 
 
@@ -118,7 +118,7 @@ https://plot.ly/r/"
           text = paste("Clarity: ", d$clarity),
           mode = "markers", color = d$carat, size = d$carat)
 ```
-<iframe src='/img/fig/plotly.html' width="100%" height="400" frameborder="0"></iframe>
+<iframe src='/img/fig/plotly.html' width="100%" height="400" frameborder="0" scrolling="no"></iframe>
 
 
 
