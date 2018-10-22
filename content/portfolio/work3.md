@@ -51,7 +51,6 @@ Avec mon équipe, nous avons imagé comment intégrer le projet dans la vie de q
 ___
 <b>Lauréat du site</b>
 
-Le projet a été lauréat.
 
 <img src="/img/emblematique_cours_des_lions_laureat_plan_de_travail_3_4d833.jpg" height="80%" width="80%"> </img>
 
