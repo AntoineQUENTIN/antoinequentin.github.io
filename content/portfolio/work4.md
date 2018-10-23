@@ -13,7 +13,7 @@ Projet réaliser pour l'Agence de l'Eau Seine Normandie.
 <i>Voici un résumé de l'étude réalisée pour l'Agence de l'Eau Seine Normandie suivie de deux exemples de modules codés en R</i>
 ___
 
-<b>Résumé </b>
+<b>Résumé</b>
 
 En établissant les normes de qualité environnementale (NQE) pour évaluer la qualité de l'eau en 2008, la Commission européenne a introduit parallèlement la notion de fond géochimique pour les métaux dissous dans les eaux de surface. Celui-ci soustrait à la concentration mesurée permet de faire la distinction entre l'influence de l'activité humaine et la part d’origine naturelle pour l’évaluation de l’état.
 
@@ -29,7 +29,7 @@ ___
 Afin d’identifier des niveaux de concentration se rapprochant des niveaux du fond géochimique, il est important de s’affranchir des pressions anthropiques. La base de données géographique Corine Land Cover (CLC) est un inventaire biophysique de l’occupation des sols qui fournit une information de référence. Un pourcentage d’occupation du sol par classe Corine Land Cover a été calculé par bassin versant de masse d’eau. Puis les masses d’eau dont la classe « territoires artificiels » dépassait 5% d’occupation totale ont été exclues. Il n’existe pas de bassin versant de masse d’eau ayant 0% d’occupation territoires artificiels sur le bassin Seine Normandie. Chacune d’entre elles est traversée à minima par une infrastructure routière. Une étude de distribution a été effectuée entre le pourcentage de territoire artificialisé et le nombre de masses d’eau disponible après exclusion. 5% offrent un nombre de masses d’eau restant suffisant, au moins la moitié est conservée pour un risque acceptable de pollution. 
 
  <i>Ci-dessous la partie du code calculant le pourcentage d'occupation du sol 'naturel' par surface avec</i><a href="https://github.com/r-spatial/sf">`Sf`</a>
-  <i>et</i> <a href="https://cran.r-project.org/web/packages/tibble/index.html">`Tibble`</a>
+  <i> et</i> <a href="https://cran.r-project.org/web/packages/tibble/index.html">`Tibble`</a>
 ```{r}
 MEbassin <- st_read("BV_ME.shp") 
 
