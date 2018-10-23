@@ -10,7 +10,7 @@ weight = 0
 Voici quelques exemples de ce qu'on peut faire avec R
 <!--more-->
 
-R permet de faire bien plus que de la simple statistique grâce à une bibliothèque de package très fournie et une communauté active. Voici un échantillon des possibilités trouver sur le web et publier grâce à <a href="https://bookdown.org/yihui/blogdown/">`blogdown`</a> et <a href="https://www.htmlwidgets.org/">`htmlwidgets`</a>.
+R permet de faire bien plus que de la simple statistique grâce à une bibliothèque de package très fournie et une communauté active. Voici un échantillon des possibilités trouver sur le web et publier grâce à <a href="https://bookdown.org/yihui/blogdown/">`Blogdown`</a> et <a href="https://www.htmlwidgets.org/">`Htmlwidgets`</a>.
 
 
 ___
