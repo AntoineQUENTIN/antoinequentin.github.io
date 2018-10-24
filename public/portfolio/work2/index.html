@@ -117,7 +117,7 @@ if (!doNotTrack) {
          <p>Voici quelques exemples de ce qu&rsquo;on peut faire avec R
 </p>
 
-<p>R permet de faire bien plus que de la simple statistique grâce à une bibliothèque de package très fournie et une communauté active. Voici un échantillon des possibilités trouver sur le web et publier grâce à <a href="https://bookdown.org/yihui/blogdown/"><code>Blogdown</code></a> et <a href="https://www.htmlwidgets.org/"><code>Htmlwidgets</code></a>.</p>
+<p>R permet de faire bien plus que de la simple statistique grâce à une bibliothèque de package très fournie et une communauté active. Voici un échantillon des possibilités trouver sur le web et publier grâce à <a href="https://bookdown.org/yihui/blogdown/"><code>blogdown</code></a> et <a href="https://www.htmlwidgets.org/"><code>htmlwidgets</code></a>.</p>
 
 <hr />
 
@@ -201,12 +201,12 @@ if (!doNotTrack) {
 
 <hr />
 
-<p><code>DT</code> affiche les matrices R ou les cadres de données sous forme de tableaux HTML interactifs prenant en charge le filtrage, la pagination et le tri.
+<p><code>DT</code> affiche les <em>matrices</em> ou <em>dataframe</em> sous forme de tableaux HTML interactifs prenant en charge le filtrage, la pagination et le tri.
 <a href="http://rstudio.github.io/DT">http://rstudio.github.io/DT</a></p>
 
-<pre><code class="language-r">  library(DT)
-     iris2 = iris[c(1:10, 51:60, 101:110), 1:4]
-  datatable(iris2,rownames = F, class = 'cell-border stripe',filter = 'top', options = list(pageLength = 5, autoWidth = TRUE,dom = 't'),width = &quot;500px&quot;)
+<pre><code class="language-r">library(DT)
+iris2 = iris[c(1:10, 51:60, 101:110), 1:4]
+datatable(iris2,rownames = F, class = 'cell-border stripe',filter = 'top', options = list(pageLength = 5, autoWidth = TRUE,dom = 't'),width = &quot;500px&quot;)
 </code></pre>
 
 <iframe src='/img/fig/DT.html' width="100%" height="400" frameborder="0" scrolling="no"></iframe>

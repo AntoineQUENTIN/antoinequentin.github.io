@@ -26,10 +26,10 @@ ___
 
 <b> Calcul d'un pourcentage d'occupation du sol 'naturel' par surface </b> 
 
-Afin d’identifier des niveaux de concentration se rapprochant des niveaux du fond géochimique, il est important de s’affranchir des pressions anthropiques. La base de données géographique Corine Land Cover (CLC) est un inventaire biophysique de l’occupation des sols qui fournit une information de référence. Un pourcentage d’occupation du sol par classe Corine Land Cover a été calculé par bassin versant de masse d’eau. Puis les masses d’eau dont la classe « territoires artificiels » dépassait 5% d’occupation totale ont été exclues. Il n’existe pas de bassin versant de masse d’eau ayant 0% d’occupation territoires artificiels sur le bassin Seine Normandie. Chacune d’entre elles est traversée à minima par une infrastructure routière. Une étude de distribution a été effectuée entre le pourcentage de territoire artificialisé et le nombre de masses d’eau disponible après exclusion. 5% offrent un nombre de masses d’eau restant suffisant, au moins la moitié est conservée pour un risque acceptable de pollution. 
+Afin d’identifier les concentrations se rapprochant du fond géochimique, il est important de s’affranchir des pressions anthropiques. La base de données géographique Corine Land Cover (CLC) est un inventaire biophysique de l’occupation des sols qui fournit une information de référence. Un pourcentage d’occupation du sol par classe Corine Land Cover a été calculé par bassin versant de masse d’eau. Puis les masses d’eau dont la classe « territoires artificiels » dépassait 5% d’occupation totale ont été exclues. Il n’existe pas de bassin versant de masse d’eau ayant 0% d’occupation territoires artificiels sur le bassin Seine Normandie. Chacune d’entre elles est traversée à minima par une infrastructure routière. Une étude de distribution a été effectuée entre le pourcentage de territoire artificialisé et le nombre de masses d’eau disponible après exclusion. 5% offrent un nombre de masses d’eau restant suffisant, au moins la moitié est conservée pour un risque acceptable de pollution. 
 
- <i>Ci-dessous la partie du code calculant le pourcentage d'occupation du sol 'naturel' par surface avec</i><a href="https://github.com/r-spatial/sf">`Sf`</a>
-  <i> et</i> <a href="https://cran.r-project.org/web/packages/tibble/index.html">`Tibble`</a>
+ <i>Ci-dessous la partie du code calculant le pourcentage d'occupation du sol 'naturel' par surface avec les packages </i><a href="https://github.com/r-spatial/sf">`sf`</a>
+  <i> et</i> <a href="https://cran.r-project.org/web/packages/tibble/index.html">`tibble`</a>
 ```{r}
 MEbassin <- st_read("BV_ME.shp") 
 
@@ -43,7 +43,7 @@ Clcnature <- Clc[Clc$CODE_06 %in% varClc_nature,]
 # Fonction intersection puis conversion en tibble
 INT_amont_nature <- as_tibble(st_intersection(Clcnature, MEbassin))
 
-# Ajoute une colonne area d'intersection pour chaque type de ClC intersect? au tibble
+# Ajoute une colonne area d'intersection pour chaque type de ClC intersecté au tibble
 INT_amont_nature$area_naturel <- st_area(INT_amont_nature$geometry)
 
 # Groupe les données par MEbassin area et calcul la surface total Clcnature area par MEbassin
@@ -65,7 +65,7 @@ ___
 
 L’étude du fond géochimique est complexe dans le sens où elle croise deux délimitations spatiales distinctes, le bassin versant hydrologique et l’unité géologique. Le bassin sédimentaire parisien en forme de pile d’assiettes croise quasiment tous les bassins versants principaux à la perpendiculaire. Restreindre l’interpolation dans l’une ou l’autre de ces emprises spatiales interdit des influences locales pourtant réelles. L’interpolation par la méthode du Kriging a été laissée libre à 360°. Plusieurs modèles de variogramme sont testés : sphérique, exponentiel, gaussienne, covariance de Matérn et le plus performant vis-à-vis de la Somme des Carrés des Résidus (SSR) est utilisé pour le variogramme. Plus la SSR est proche de zéro, plus le modèle décrit la variance en fonction de la distance. Les paramètres du Krigeage sont déterminés automatiquement (nugget, sill, rang, kappa.range) par l’optimisation de la SSR et pour l’ensemble du bassin. L’interpolation se fait sur une grille rectangulaire aux dimensions du bassin Seine Normandie dont les mailles font environ 1 km². Pour une masse d’eau considérée, le résultat est représenté par la moyenne de l’ensemble des mailles interceptant ces limites. Cette moyenne à la masse d’eau permet de prend en compte leur hétérogénéité. Certaines se trouvant sur plusieurs hydro-éco-région (Wasson, 2002). 
 
- <i> Ci-dessous la partie du code du kriging et de la parallélisation de l'interpolation, à partir des moyennes à la station. La parallélisation est nécessaire pour diviser par 4 le temps d'interpolation et permettant ainsi de multiplier les tests avec </i> <a href="https://stat.ethz.ch/R-manual/R-devel/library/parallel/doc/parallel.pdf">`Parallel`</a>  
+ <i> Ci-dessous la partie du code du kriging et de la parallélisation de l'interpolation. La parallélisation est utile pour diviser par 4 le temps d'interpolation et permet ainsi de multiplier les tests. Packages </i> <a href="https://stat.ethz.ch/R-manual/R-devel/library/parallel/doc/parallel.pdf">`parallel`</a>,  <a href="https://cran.r-project.org/web/packages/gstat/index.html">`gstat`</a> et <a href="https://cran.r-project.org/web/packages/maptools/index.html">`maptools`</a>
  
 
 ```{r}
@@ -93,6 +93,6 @@ Interpolation.kriging <- SpatialPixelsDataFrame(points = mergeParallelX, data = 
 
 ```
 ___
-<i> Les résultats cartographiés grâce à </i> <a href="https://cran.r-project.org/web/packages/mapview/index.html">`Mapview`</a>
+<i> Les résultats cartographiés grâce à </i> <a href="https://cran.r-project.org/web/packages/mapview/index.html">`mapview`</a>
 
 <iframe src='/img/mapview_station_arsenic_mean.html' width="100%" height="800" ></iframe>

@@ -11,7 +11,7 @@ En 2016, les Pariscultureurs.
 <!--more-->
 
 
-J'ai participé au montage d'un projet dans le cadre des <a href="http://www.parisculteurs.paris/">Pariscultures</a> sur le site du gymnase de la cour des lions dans le XIème arrondissement de Paris. Retour sur ce projet.
+J'ai participé au montage d'un projet dans le cadre des <a href="http://www.parisculteurs.paris/">Pariscultures</a> sur le site du gymnase de la cour des lions dans le XIème arrondissement de Paris.Retour sur mes travaux.
 
 ___
 <b>Conception technique</b>

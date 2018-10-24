@@ -10,7 +10,7 @@ weight = 0
 Voici quelques exemples de ce qu'on peut faire avec R
 <!--more-->
 
-R permet de faire bien plus que de la simple statistique grâce à une bibliothèque de package très fournie et une communauté active. Voici un échantillon des possibilités trouver sur le web et publier grâce à <a href="https://bookdown.org/yihui/blogdown/">`Blogdown`</a> et <a href="https://www.htmlwidgets.org/">`Htmlwidgets`</a>.
+R permet de faire bien plus que de la simple statistique grâce à une bibliothèque de package très fournie et une communauté active. Voici un échantillon des possibilités trouver sur le web et publier grâce à <a href="https://bookdown.org/yihui/blogdown/">`blogdown`</a> et <a href="https://www.htmlwidgets.org/">`htmlwidgets`</a>.
 
 
 ___
@@ -97,11 +97,11 @@ https://github.com/bwlewis/rthreejs
 
 
 ___
-`DT` affiche les matrices R ou les cadres de données sous forme de tableaux HTML interactifs prenant en charge le filtrage, la pagination et le tri.
+`DT` affiche les _matrices_ ou _dataframe_ sous forme de tableaux HTML interactifs prenant en charge le filtrage, la pagination et le tri.
 http://rstudio.github.io/DT
 
 ```{r}
-  library(DT)
+library(DT)
 iris2 = iris[c(1:10, 51:60, 101:110), 1:4]
 datatable(iris2,rownames = F, class = 'cell-border stripe',filter = 'top', options = list(pageLength = 5, autoWidth = TRUE,dom = 't'),width = "500px")
 ```
