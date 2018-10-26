@@ -1,4 +1,3 @@
-
 +++
 showonlyimage = false
 draft = false
@@ -7,6 +6,7 @@ date = "2016-11-05T18:25:22+05:30"
 title = "Visualisation de données"
 weight = 0
 +++
+
 Voici quelques exemples de ce qu'on peut faire avec R
 <!--more-->
 
@@ -69,8 +69,26 @@ https://datastorm-open.github.io/visNetwork
 ```
 <iframe src='/img/fig/visNetwork.html' width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 
+```{r}
+  library(tidyverse)
+  library(visNetwork)
+  
+  nodes <- tibble(id = 1:30)
+  edges <- tibble(from = c(21:30, 1:20),
+                  to = c(5:20, 21:30, 1:4),
+                  weight = c(rep(1:5, 6)))
+  
+ visNetwork(nodes, edges) %>%visIgraphLayout(layout = "layout_in_circle") %>%
+    visOptions(highlightNearest = list(enabled = T, 
+                                       hover = T, 
+                                       degree = 1, 
+                                       algorithm = "hierarchical"),
+                                       nodesIdSelection = T)
+```
+<iframe src='/img/fig/visNetwork.2.html' width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 
 ___
+
 `D3heatmap` permet de faire des cartes interactives, avec notamment la mise en surbrillance et du zoom de lignes et colonnes.
 https://github.com/rstudio/d3heatmap"
 
