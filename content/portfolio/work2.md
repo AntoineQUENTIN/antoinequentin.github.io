@@ -100,7 +100,7 @@ https://github.com/rstudio/d3heatmap"
 
 ___
 
-`gganimate` permet d'annimer des graphiques à partir de ggplot2.
+`gganimate` permet d'animer des graphiques à partir de ggplot2.
 https://github.com/thomasp85/gganimate
 
 ```{r}
@@ -116,7 +116,7 @@ https://github.com/thomasp85/gganimate
     transition_time(year) +
     ease_aes('linear')
 ```
-<iframe src='/img/fig/gapminder.gif' width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+<iframe src='/img/fig/gapminder.gif' width="500" height="500" frameborder="0" scrolling="no"></iframe>
 
 ___
 `threejs` permet de manipuler un diagramme à l'aide de la souris.
