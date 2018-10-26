@@ -121,7 +121,7 @@ if (!doNotTrack) {
 
 <hr />
 
-<p><code>NetworkD3</code> permet de créer des graphiques de réseau à partir de javascript D3.
+<p><code>networkD3</code> permet de créer des graphiques de réseau à partir de javascript D3.
 <a href="https://christophergandrud.github.io/networkD3/">https://christophergandrud.github.io/networkD3/</a></p>
 
 <pre><code class="language-r"> library(networkD3)
@@ -160,7 +160,7 @@ if (!doNotTrack) {
 
 <hr />
 
-<p><code>VisNetwork</code> fournit une interface de la bibliothèque vis.js pour visualiser les réseaux<br />
+<p><code>visNetwork</code> fournit une interface de la bibliothèque vis.js pour visualiser les réseaux<br />
 <a href="https://datastorm-open.github.io/visNetwork">https://datastorm-open.github.io/visNetwork</a></p>
 
 <pre><code class="language-r">  library(visNetwork)
@@ -194,7 +194,7 @@ if (!doNotTrack) {
 
 <hr />
 
-<p><code>D3heatmap</code> permet de faire des cartes interactives, avec notamment la mise en surbrillance et du zoom de lignes et colonnes.
+<p><code>d3heatmap</code> permet de faire des cartes interactives, avec notamment la mise en surbrillance et du zoom de lignes et colonnes.
 <a href="https://github.com/rstudio/d3heatmap&quot;">https://github.com/rstudio/d3heatmap&quot;</a></p>
 
 <pre><code class="language-r"> library(d3heatmap)
@@ -205,7 +205,27 @@ if (!doNotTrack) {
 
 <hr />
 
-<p><code>Threejs</code> permet de manipuler un diagramme à l&rsquo;aide de la souris.
+<p><code>gganimate</code> permet d&rsquo;annimer des graphiques à partir de ggplot2.
+<a href="https://github.com/thomasp85/gganimate">https://github.com/thomasp85/gganimate</a></p>
+
+<pre><code class="language-r">  library(gapminder)
+  ggplot(gapminder, aes(gdpPercap, lifeExp, size = pop, colour = country)) +
+    geom_point(alpha = 0.7, show.legend = FALSE) +
+    scale_colour_manual(values = country_colors) +
+    scale_size(range = c(2, 12)) +
+    scale_x_log10() +
+    facet_wrap(~continent) +
+    # Here comes the gganimate specific bits
+    labs(title = 'Year: {frame_time}', x = 'GDP per capita', y = 'life expectancy') +
+    transition_time(year) +
+    ease_aes('linear')
+</code></pre>
+
+<iframe src='/img/fig/gapminder.gif' width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+
+<hr />
+
+<p><code>threejs</code> permet de manipuler un diagramme à l&rsquo;aide de la souris.
 <a href="https://github.com/bwlewis/rthreejs">https://github.com/bwlewis/rthreejs</a></p>
 
 <pre><code class="language-r">  library(threejs)
@@ -231,7 +251,7 @@ datatable(iris2,rownames = F, class = 'cell-border stripe',filter = 'top', optio
 
 <hr />
 
-<p><code>Plot_ly</code> permet de traduire facilement les graphiques ggplot2 en une version Web interactive, et fournit également des liaisons à la bibliothèque graphique plotly.js.
+<p><code>plot_ly</code> permet de traduire facilement les graphiques ggplot2 en une version Web interactive, et fournit également des liaisons à la bibliothèque graphique plotly.js.
 <a href="https://plot.ly/r/&quot;">https://plot.ly/r/&quot;</a></p>
 
 <pre><code class="language-r">  library(plot_ly)

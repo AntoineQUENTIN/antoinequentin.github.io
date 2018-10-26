@@ -14,7 +14,7 @@ R permet de faire bien plus que de la simple statistique grâce à une biblioth�
 
 
 ___
-`NetworkD3` permet de créer des graphiques de réseau à partir de javascript D3.
+`networkD3` permet de créer des graphiques de réseau à partir de javascript D3.
 https://christophergandrud.github.io/networkD3/
 
 ```{r}
@@ -56,7 +56,7 @@ https://christophergandrud.github.io/networkD3/
 
 
 ___
-`VisNetwork` fournit une interface de la bibliothèque vis.js pour visualiser les réseaux  
+`visNetwork` fournit une interface de la bibliothèque vis.js pour visualiser les réseaux  
 https://datastorm-open.github.io/visNetwork
 ```{r}
   library(visNetwork)
@@ -89,7 +89,7 @@ https://datastorm-open.github.io/visNetwork
 
 ___
 
-`D3heatmap` permet de faire des cartes interactives, avec notamment la mise en surbrillance et du zoom de lignes et colonnes.
+`d3heatmap` permet de faire des cartes interactives, avec notamment la mise en surbrillance et du zoom de lignes et colonnes.
 https://github.com/rstudio/d3heatmap"
 
 ```{r}
@@ -98,10 +98,28 @@ https://github.com/rstudio/d3heatmap"
 ```
 <iframe src='/img/fig/d3heatmap.html' width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 
+___
 
+`gganimate` permet d'annimer des graphiques à partir de ggplot2.
+https://github.com/thomasp85/gganimate
+
+```{r}
+  library(gapminder)
+  ggplot(gapminder, aes(gdpPercap, lifeExp, size = pop, colour = country)) +
+    geom_point(alpha = 0.7, show.legend = FALSE) +
+    scale_colour_manual(values = country_colors) +
+    scale_size(range = c(2, 12)) +
+    scale_x_log10() +
+    facet_wrap(~continent) +
+    # Here comes the gganimate specific bits
+    labs(title = 'Year: {frame_time}', x = 'GDP per capita', y = 'life expectancy') +
+    transition_time(year) +
+    ease_aes('linear')
+```
+<iframe src='/img/fig/gapminder.gif' width="100%" height="400" frameborder="0" scrolling="no"></iframe>
 
 ___
-`Threejs` permet de manipuler un diagramme à l'aide de la souris.
+`threejs` permet de manipuler un diagramme à l'aide de la souris.
 https://github.com/bwlewis/rthreejs
 
 ```{r}
@@ -127,7 +145,7 @@ datatable(iris2,rownames = F, class = 'cell-border stripe',filter = 'top', optio
 
 
 ___
-`Plot_ly` permet de traduire facilement les graphiques ggplot2 en une version Web interactive, et fournit également des liaisons à la bibliothèque graphique plotly.js.
+`plot_ly` permet de traduire facilement les graphiques ggplot2 en une version Web interactive, et fournit également des liaisons à la bibliothèque graphique plotly.js.
 https://plot.ly/r/"
 
 ```{r}
