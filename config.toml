@@ -15,7 +15,7 @@ googleAnalytics = "UA-127812757-1"
   description = "BLOG"
   copyright = "&copy;2018 Antoine QUENTIN"
   sidebarAbout = [
-    "Ce site contient des projets réalisés en dehors et pour le travail",
+    "Ce portfolio recense mes projets réalisés au cours de mes missions et sur mon temps libre.",
     "Paris, France"
   ]
   # Contact page
