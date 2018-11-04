@@ -24,11 +24,14 @@ Pour commencer, quelques packages sont nécessaires : `tidyverse` pour manipuler
 On commence par charger l'historique du prix du bitcoin
 
 ```{r}
-btc.price <-get_historic_price(currency = "USD", start = ymd(20150101),end = as.Date(Sys.time()))
-btc.price$date <- row.names(btc.price);row.names(btc.price) <- 1:nrow(btc.price)
-sample <- btc.price ; sample$date <- as.Date(sample$date) ;colnames(sample) <- c("value","date")
+btc.price <-get_historic_price(currency = "USD",
+                              start = ymd(20150101),
+                              end = as.Date(Sys.time()))
+btc.price$date <- row.names(btc.price)
+row.names(btc.price) <- 1:nrow(btc.price)
+sample <- btc.price; sample$date <- as.Date(sample$date)
+colnames(sample) <- c("value","date")
 ```
-
 
 On simule une rotation 
 
