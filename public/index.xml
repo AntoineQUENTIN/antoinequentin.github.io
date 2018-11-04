@@ -6,35 +6,25 @@
     <description>Recent content on Antoine QUENTIN</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Dec 2016 21:49:57 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 02 Nov 2018 18:25:22 +0530</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>A Plain Markdown Post</title>
-      <link>/post/2016-12-30-hello-markdown/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
+      <title>Bitcoin animation</title>
+      <link>/portfolio/work5/</link>
+      <pubDate>Fri, 02 Nov 2018 18:25:22 +0530</pubDate>
       
-      <guid>/post/2016-12-30-hello-markdown/</guid>
-      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
- You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
-    </item>
-    
-    <item>
-      <title>CV carte</title>
-      <link>/portfolio/work1/</link>
-      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
-      
-      <guid>/portfolio/work1/</guid>
-      <description>&lt;p&gt;Mes différentes expériences et formations cartographiées grâce à Leaflet
+      <guid>/portfolio/work5/</guid>
+      <description>&lt;p&gt;Un projet pour apprendre à utiliser &lt;code&gt;gganimate&lt;/code&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Modélisation du fond géochimique sur le bassin de la Seine</title>
       <link>/portfolio/work4/</link>
-      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
+      <pubDate>Sat, 20 Oct 2018 18:25:22 +0530</pubDate>
       
       <guid>/portfolio/work4/</guid>
       <description>&lt;p&gt;Projet réaliser pour l&amp;rsquo;Agence de l&amp;rsquo;Eau Seine Normandie.
@@ -44,7 +34,7 @@
     <item>
       <title>Projet d&#39;agriculture urbaine</title>
       <link>/portfolio/work3/</link>
-      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
+      <pubDate>Mon, 08 Oct 2018 18:25:22 +0530</pubDate>
       
       <guid>/portfolio/work3/</guid>
       <description>&lt;p&gt;En 2016, les Pariscultureurs.
@@ -54,7 +44,7 @@
     <item>
       <title>Visualisation de données</title>
       <link>/portfolio/work2/</link>
-      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
+      <pubDate>Fri, 28 Sep 2018 18:25:22 +0530</pubDate>
       
       <guid>/portfolio/work2/</guid>
       <description>&lt;p&gt;Voici quelques exemples de ce qu&amp;rsquo;on peut faire avec R
@@ -62,14 +52,34 @@
     </item>
     
     <item>
+      <title>CV carte</title>
+      <link>/portfolio/work1/</link>
+      <pubDate>Sun, 23 Sep 2018 18:25:22 +0530</pubDate>
+      
+      <guid>/portfolio/work1/</guid>
+      <description>&lt;p&gt;Mes différentes expériences et formations cartographiées grâce à Leaflet
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>A propos</title>
       <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
+      <pubDate>Thu, 20 Sep 2018 21:48:51 -0700</pubDate>
       
       <guid>/about/</guid>
       <description>Je suis chargé d&amp;rsquo;études spécialisé dans la donnée environnementale. J&amp;rsquo;ai travaillé dans différentes agences gouvernementales dans le domaine de l&amp;rsquo;eau et de la biodiversité.
-J&amp;rsquo;ai créé ce blog pour centraliser mes projets sur R.
+J&amp;rsquo;ai créé ce blog pour centraliser mes projets.
 Pour la publication du blog, j&amp;rsquo;ai suivi les conseils d&amp;rsquo;Amber Thomas https://amber.rbind.io/blog/2016/12/19/creatingsite/</description>
+    </item>
+    
+    <item>
+      <title>A Plain Markdown Post</title>
+      <link>/post/2016-12-30-hello-markdown/</link>
+      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2016-12-30-hello-markdown/</guid>
+      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
+ You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
     </item>
     
     <item>

@@ -3,7 +3,7 @@
 showonlyimage = false
 draft = false
 image = "img/portfolio/Bord_de_la_Marne.jpg"
-date = "2016-11-05T18:25:22+05:30"
+date = "2018-10-20T18:25:22+05:30"
 title = "Modélisation du fond géochimique sur le bassin de la Seine"
 weight = 0
 +++

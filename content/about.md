@@ -1,6 +1,6 @@
 ---
 title: "A propos"
-date: "2016-05-05T21:48:51-07:00"
+date: "2018-09-20T21:48:51-07:00"
 ---
 <img src="/img/about.jpg" height="50%" width="50%" > </img>
 ___

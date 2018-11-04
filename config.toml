@@ -11,12 +11,18 @@ googleAnalytics = "UA-127812757-1"
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
   style = "blue"
-  
+  highlightjsVersion = "9.13.1"
+  highlightjsCDN = "//cdn.bootcss.com"
+  highlightjsLang = ["r"]
+  highlightjsTheme = "github"
+  MathJaxCDN = "//cdn.bootcss.com"
+  MathJaxVersion = "2.7.1"
+ 
   description = "BLOG"
   copyright = "&copy;2018 Antoine QUENTIN"
   sidebarAbout = [
     "Ce portfolio recense mes projets réalisés au cours de mes missions et sur mon temps libre.",
-    "Paris, France"
+    "Bonne visite"
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
@@ -52,3 +58,5 @@ googleAnalytics = "UA-127812757-1"
   github        = "https://github.com/antoinequentin"
 
  
+
+

@@ -2,7 +2,7 @@
 showonlyimage = false
 draft = false
 image = "img/portfolio/data.viz.png"
-date = "2016-11-05T18:25:22+05:30"
+date = "2018-09-28T18:25:22+05:30"
 title = "Visualisation de données"
 weight = 0
 +++

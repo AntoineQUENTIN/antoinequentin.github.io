@@ -3,7 +3,7 @@
 showonlyimage = true
 draft = false
 image = "img/portfolio/urban.agri.png"
-date = "2016-11-05T18:25:22+05:30"
+date = "2018-10-08T18:25:22+05:30"
 title = "Projet d'agriculture urbaine"
 weight = 0
 +++
