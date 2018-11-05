@@ -77,5 +77,5 @@ bit.anim <- ggplot(sample3)+
   transition_manual(id) +theme_void()+
   guides(size="none",alpha="none",color="none")
  
-animate(anim, fps=30, duration=60, width=600, height=400)
+animate(bit.anim , fps=30, duration=60, width=600, height=400)
 ```
