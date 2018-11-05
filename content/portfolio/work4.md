@@ -7,7 +7,7 @@ date = "2018-10-20T18:25:22+05:30"
 title = "Modélisation du fond géochimique sur le bassin de la Seine"
 weight = 0
 +++
-Projet réaliser pour l'Agence de l'Eau Seine Normandie.
+Étude réalisée pour l'Agence de l'Eau Seine Normandie.
 <!--more-->
 
 <i>Voici un résumé de l'étude réalisée pour l'Agence de l'Eau Seine Normandie suivie de deux exemples de modules codés en R</i>
