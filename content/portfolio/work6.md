@@ -7,7 +7,7 @@ date = "2018-11-02T18:25:22+05:30"
 title = "Arbre taxonomique"
 weight = 0
 +++
-Un projet pour apprendre à utiliser `shiny`, `networkD3`, `data.tree`
+Un projet pour manipuler `shiny`, `networkD3`, `data.tree`
 <!--more-->
 
 
