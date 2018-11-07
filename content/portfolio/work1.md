@@ -8,7 +8,7 @@ title = "CV carte"
 weight = 0
 +++
 
-Mes différentes expériences et formations cartographiées grâce à `Leaflet`
+Mes différentes expériences et formations cartographiées grâce à `leaflet`
 <!--more-->
 
 <iframe src='/img/fig/leaflet.html' width="100%" height="800" ></iframe>
