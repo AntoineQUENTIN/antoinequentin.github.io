@@ -4,7 +4,7 @@ showonlyimage = false
 draft = false
 image = "img/portfolio/Bitcoin.price.gif"
 date = "2018-11-02T18:25:22+05:30"
-title = "Bitcoin animation"
+title = "Courbe animation"
 weight = 0
 +++
 Un projet pour apprendre à utiliser `gganimate`
@@ -13,7 +13,7 @@ Un projet pour apprendre à utiliser `gganimate`
 <iframe src='/img/Bitcoin.price.gif' width="100%" height="400" frameborder="0" scrolling="no" ></iframe>
 
 
-Voici la célébre courbe du Bitcoin  qui avait atteint son plus haut niveau historique en décembre 2017. Je l'ai animé avec `gganimate` en m'inspirant du travail de Jonathan Spring.
+Voici une courbe assez célébre, celle du Bitcoin. Je l'ai animé avec `gganimate` en m'inspirant du travail de Jonathan Spring.
 
 {{< tweet 1048711474468728832 >}}
 
