@@ -10,7 +10,7 @@ weight = 0
 Étude réalisée pour l'Agence de l'Eau Seine Normandie. Cas d'utilisation de `sf`, `parellel` `maptools` et `gstat`
 <!--more-->
 
-<i>Voici un résumé de l'étude réalisée pour l'Agence de l'Eau Seine Normandie suivie de deux exemples de modules codés en R</i>
+<i>Voici un résumé de l'étude réalisée pour l'Agence de l'Eau Seine Normandie suivi de deux exemples de modules codés en R</i>
 ___
 
 <b>Résumé</b>
