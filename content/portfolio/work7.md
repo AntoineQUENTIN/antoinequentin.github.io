@@ -11,7 +11,7 @@ Un projet pour manipuler `shiny` et `leaflet`
 <!--more-->
 
 Voici un exemple d'outil que l'on peut créer avec Shiny pour travailler à plusieurs des problématiques SIG.
-Ici, la question posée aux employés était de savoir si les erreurs d'intersection point/polygone venaient soit des coordonnées du point, soit du polygone associé
+Ici, la question posée aux employés était de savoir si les erreurs d'intersection point/polygone venaient soit des coordonnées du point, soit du polygone associé.
 
 <i>L'application est hébergée sur shinyapps.io</i>
 
