@@ -1,7 +1,7 @@
 
 +++
 showonlyimage = false
-draft = false
+draft = true
 image = "img/portfolio/shiny.commune.PNG"
 date = "2019-16-02T18:25:22+05:30"
 title = "Dashboard avec Shiny"
@@ -11,7 +11,11 @@ Un projet pour manipuler `shiny` et `leaflet`
 <!--more-->
 
 Voici un exemple d'outil que l'on peut créer avec Shiny pour travailler à plusieurs des problématiques SIG.
-Ici, la question posée aux employés était de savoir si les erreurs d'intersection point/polygone venaient soit des coordonnées du point, soit du polygone associé.
+La question posée ici, était de savoir si les erreurs d'intersection point/polygone provenaient : soit des coordonnées du point (une adresse), soit du polygone associé (une commune).
+Un formulaire permettait de récupérer les nouvelles données. 
+
+Pour l'exemple ci-dessous des données ont été recréées aléatoirement.
+
 
 <i>L'application est hébergée sur shinyapps.io</i>
 
