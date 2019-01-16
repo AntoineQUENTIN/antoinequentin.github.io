@@ -1,7 +1,7 @@
 
 +++
 showonlyimage = false
-draft = true
+draft = false
 image = "img/portfolio/shiny.commune.PNG"
 date = "2019-16-02T18:25:22+05:30"
 title = "Dashboard avec Shiny"
