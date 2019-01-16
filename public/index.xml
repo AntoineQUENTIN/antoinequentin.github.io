@@ -17,7 +17,7 @@
       <pubDate>Fri, 02 Nov 2018 18:25:22 +0530</pubDate>
       
       <guid>/portfolio/work6/</guid>
-      <description>&lt;p&gt;Un projet pour apprendre à utiliser &lt;code&gt;shiny&lt;/code&gt;, &lt;code&gt;networkD3&lt;/code&gt;, &lt;code&gt;data.tree&lt;/code&gt;
+      <description>&lt;p&gt;Un projet pour manipuler &lt;code&gt;shiny&lt;/code&gt;, &lt;code&gt;networkD3&lt;/code&gt;, &lt;code&gt;data.tree&lt;/code&gt;
 &lt;/p&gt;</description>
     </item>
     
@@ -67,7 +67,7 @@
       <pubDate>Sun, 23 Sep 2018 18:25:22 +0530</pubDate>
       
       <guid>/portfolio/work1/</guid>
-      <description>&lt;p&gt;Mes différentes expériences et formations cartographiées grâce à Leaflet
+      <description>&lt;p&gt;Mes différentes expériences et formations cartographiées grâce à &lt;code&gt;leaflet&lt;/code&gt;
 &lt;/p&gt;</description>
     </item>
     
@@ -110,6 +110,16 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       
       <guid>/post/2015-01-01-lorem-ipsum/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>Dashboard avec Shiny</title>
+      <link>/portfolio/work7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/work7/</guid>
+      <description>&lt;p&gt;Un projet pour manipuler &lt;code&gt;shiny&lt;/code&gt; et &lt;code&gt;leaflet&lt;/code&gt;
+&lt;/p&gt;</description>
     </item>
     
   </channel>

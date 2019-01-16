@@ -17,7 +17,7 @@
       <pubDate>Fri, 02 Nov 2018 18:25:22 +0530</pubDate>
       
       <guid>/portfolio/work6/</guid>
-      <description>&lt;p&gt;Un projet pour apprendre à utiliser &lt;code&gt;shiny&lt;/code&gt;, &lt;code&gt;networkD3&lt;/code&gt;, &lt;code&gt;data.tree&lt;/code&gt;
+      <description>&lt;p&gt;Un projet pour manipuler &lt;code&gt;shiny&lt;/code&gt;, &lt;code&gt;networkD3&lt;/code&gt;, &lt;code&gt;data.tree&lt;/code&gt;
 &lt;/p&gt;</description>
     </item>
     
@@ -67,7 +67,17 @@
       <pubDate>Sun, 23 Sep 2018 18:25:22 +0530</pubDate>
       
       <guid>/portfolio/work1/</guid>
-      <description>&lt;p&gt;Mes différentes expériences et formations cartographiées grâce à Leaflet
+      <description>&lt;p&gt;Mes différentes expériences et formations cartographiées grâce à &lt;code&gt;leaflet&lt;/code&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dashboard avec Shiny</title>
+      <link>/portfolio/work7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/work7/</guid>
+      <description>&lt;p&gt;Un projet pour manipuler &lt;code&gt;shiny&lt;/code&gt; et &lt;code&gt;leaflet&lt;/code&gt;
 &lt;/p&gt;</description>
     </item>
     
