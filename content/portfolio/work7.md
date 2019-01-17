@@ -12,7 +12,7 @@ Un projet pour manipuler `shiny` et `leaflet`
 
 Voici un exemple d'outil que l'on peut créer avec Shiny pour travailler à plusieurs des problématiques SIG.
 La question posée ici, était de savoir si les erreurs d'intersection point/polygone provenaient : soit des coordonnées du point (une adresse), soit du polygone associé (une commune).
-Un formulaire permettait de récupérer les nouvelles données. 
+Un formulaire permettait de récupérer les corrections. 
 
 Pour l'exemple ci-dessous des données ont été recréées aléatoirement.
 
