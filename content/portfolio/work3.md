@@ -11,7 +11,7 @@ En 2016, les Pariscultureurs.
 <!--more-->
 
 
-Voici quelques éléments du dossier d'un projet d'agriculture urbaine sur le site du gymnase de la cour des lions dans le XIèmeà Paris. 
+Voici quelques éléments tirer du dossier d'un projet d'agriculture urbaine sur le site du gymnase de la cour des lions dans le XIème à Paris. 
 
 ___
 <b>Conception technique</b>
